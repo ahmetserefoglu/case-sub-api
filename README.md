@@ -54,13 +54,14 @@ Endpoints
 The API provides several endpoints for handling subscriptions:
 
 /api/register: Registers a device with the provided UID, AppID, language, and operating system.
+
 /api/verify-purchase: Processes in-app purchase requests with the provided client-token and receipt.
+
 /api/subscription-status: Returns the current subscription status for a device.
+
 Workers
 A worker process periodically checks the subscription status in the database and updates it based on the information received from the mock iOS and Google platforms. The worker process can be set up using a scheduler like cron or a process manager like Supervisor.
 
-Event Notifications
+Event Notifications SendCallBack
 The API generates events for subscription status changes (started, renewed, canceled) and sends them as HTTP POST requests to pre-configured 3rd-party endpoints.
 
-Reporting
-SQL queries can be used to generate reports on the number of started, ended, and renewed subscriptions by date and operating system.
