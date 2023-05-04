@@ -20,7 +20,7 @@ A SQL database such as MySQL or PostgreSQL
 Installation
 
 1-Clone the repository:
-git clone https://github.com/your-repository/subscription-management-api.git
+git clone https://github.com/ahmetserefoglu/case-sub-api.git
 
 2-Change to the project directory:
 cd subscription-management-api
